@@ -1,11 +1,11 @@
 window.onload = function() {
- var box = document.getElementsByClassName('box');
+  var divElement = document.querySelector(".container");
+  var divChilds = divElement.children;
 
- box.addEventListener('mouseover',addX);
+  divChilds.addEventListener('mouseup',addX);
 
- function addX(event) {
-   event.target.style.backgroundColor = 'yellow';
- }
+  function addX(event) {
+    event.target.style.backgroundColor = 'yellow';
+  }
 
- 
 }
